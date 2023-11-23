@@ -1,12 +1,12 @@
 # Introduction
 
 Table of contents
-- [What is NLP?](my-anchor) 
-- [Python Review](my-anchor2)
-- [Regular Expressions](my-anchor3)
-- [Tokenization](my-anchor4)
+- [What is NLP?](#what-is-natural-language-processing?) 
+- [Python Review](#python-review)
+- [Regular Expressions](#what-is-a-regular-expression?)
+- [Tokenization](#what-is-tokenization)
 
-## <a id="my-anchor"> **What is Natural Language Processing?** </a>
+## What is Natural Language Processing? 
 
 - Field of study focused on making sense of language
     - using statistics and computers
@@ -17,7 +17,7 @@ Table of contents
 - Translation
 - Sentiment analysis
 
-## <a id="my-anchor2"> **Python Review ** </a>
+## Python Review
 
 - Variable and Operations
 - Conditional Statements
@@ -67,7 +67,7 @@ Table of contents
 - Functions
 - Classes and Objects
 
-## <a id="my-anchor3"> **What is a Regular Expression?** </a>
+## What is a Regular Expression?
 
 Regular expression or regex is a sequence of characters that defines a specific search pattern and using which you can match or substitute patterns inside a text with least amount of code.
 
@@ -94,7 +94,7 @@ re.match(word_regex,'hi there!')
 - Substituting patterns in text
 - Preprocessing using Regex
 
-## <a id="my-anchor4"> **What is tokenization?** </a>
+## What is tokenization?
 
 - Turning a string or document into **tokens** (smaller chunks)
 - One step in preparing a text for NLP
@@ -112,11 +112,6 @@ re.match(word_regex,'hi there!')
 from nltk.tokenize import word_tokenize
 work_tokenize("Hi there!")
 ```
-
-<aside>
-💻 [’Hi’, ‘there’, ‘!’]
-
-</aside>
 
 **Why tokenize?**
 
