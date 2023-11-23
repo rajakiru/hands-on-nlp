@@ -1,7 +1,3 @@
-# Natural Language Processing using Python
-
-# Introduction to numpy
-# Importing Libraries
 import numpy as np
 
 # arange()
