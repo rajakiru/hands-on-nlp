@@ -2,7 +2,7 @@
 This repository is my notes and study material used for learning NLP. It includes my lecture notes and materials taught by bijoyandas on udemy.
 
 ## Table of Contents
-- What is NLP? Python Review and Regular Expressions
+- [What is NLP? Python Review and Regular Expressions](nlp01-introduction/readme.md)
 - Introduction to Numpy and Pandas
 - NLP Core 1: Tokenization, Stemming, Lemmatization, Stop word removal, Part of word tagging, Name entity recognition
 - NLP Core 2: Text modelling
