@@ -1,4 +1,4 @@
-## **Latent Semantic Analysis**
+## **Latent Semantic Analysis
 
 “**Latent semantic analysis** is a technique of analysing relationships between a set of documents and the terms they contain by producing a set of **concepts** related to the documents and terms”
 
@@ -22,9 +22,9 @@ When we use latent semantic analysis we will have a huge value of  data.
 | Sentence 2 | 1 | 0 | 1 | 1 | 1 | 0 | 0 | 0 | 1 | 1 |
 | Sentence 3 | 1 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | 0 |
 
-### SVD: Singular Value Decomposition
+## SVD: Singular Value Decomposition
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/51eb880f-19b5-4de9-90d9-680025516f9b/Untitled.png)
+![Untitled](https://assets-global.website-files.com/5b1d427ae0c922e912eda447/5feb62f53532cb257a8f901d_open_compressed.jpg)
 
 $$
 A[mxn] = U[mxr] * S[rxr] * (V[nxr])^T
@@ -46,15 +46,15 @@ $$
 
 - n x r matrix (n = n = number of words/features, r = number of concepts)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/61061940-bdfc-468f-bb28-8a4f295d9f47/Untitled.png)
+![Untitled](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*iDazFG1YMspV8yz3.jpg)
 
-**Application**
+## Applications
 
 - Article Bucketing in websites
 - Finding relations between articles and words
 - Page Indexing in search engines
 
-**Building concepts from raw text**
+### Building concepts from raw text**
 
 Using Latent semantic analysis in python. We use two new libraries TfidfVectorizer and TruncatedSVD.
 
@@ -82,7 +82,7 @@ lsa.fit(X)
 row1 = lsa.components_[3]
 ```
 
-**Visualizing the concepts**
+### Visualizing the concepts**
 
 ```python
 terms = vectorizer.get_feature_names()
@@ -95,4 +95,20 @@ for i,comp in enumerate(lsa.components_):
         print(term)
 ```
 
-**Sentence the concepts**
+### Sentence the concepts**
+
+```python
+for key in concept_words.keys():
+    sentence_scores = []
+    for sentence in dataset:
+        words = nltk.word_tokenize(sentence)
+        score = 0
+        for word in words:
+            for word_with_score in concept_words[key]:
+                if word == word_with_score[0]:
+                    score += word_with_score[1]
+        sentence_scores.append(score)
+    print("\n"+key+":")
+    for sentence_score in sentence_scores:
+        print(sentence_score)
+```
