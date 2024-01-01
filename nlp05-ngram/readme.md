@@ -1,7 +1,7 @@
 # Table of Contents
-- [Introduction to Markov Chains](introduction-to-markov-chains)
-- [Building the Character N-Gram model](building-the-character-N-Gram-model)
-- [Building the Word N-Gram model](building-the-word-N-Gram-model)
+- [Introduction to Markov Chains](#introduction-to-markov-chains)
+- [Building the Character N-Gram model](#building-the-character-n-gram-model)
+- [Building the Word N-Gram model](#building-the-word-n-gram-model)
 
 ## Introduction to Markov Chains
 

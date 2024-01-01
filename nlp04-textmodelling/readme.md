@@ -1,7 +1,7 @@
 # Table of Contents 
 
 - [Text Modelling using Bag of Words](#text-modelling-using-bag-of-words)
-- [Building the Bag of Words](#building-the-bag-of-words)
+- [Building the Bag of Words](#building-the-bow-model)
 - [Text Modelling using TF-IDF model](#text-modelling-using-tf-idf-model)
 - [Building the TF-IDF model](#building-the-TF-IDF-model)
 

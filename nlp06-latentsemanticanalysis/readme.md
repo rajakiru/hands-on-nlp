@@ -1,4 +1,9 @@
-## **Latent Semantic Analysis
+# Table of Contents
+- [Latent Semantic Analysis](#latent-semantic-analysis)
+- [SVD: Singular Value Decomposition](#svd-singular-value-decomposition)
+- [Applications](#applications)
+
+## Latent Semantic Analysis
 
 “**Latent semantic analysis** is a technique of analysing relationships between a set of documents and the terms they contain by producing a set of **concepts** related to the documents and terms”
 
@@ -54,7 +59,7 @@ $$
 - Finding relations between articles and words
 - Page Indexing in search engines
 
-### Building concepts from raw text**
+### Building concepts from raw text
 
 Using Latent semantic analysis in python. We use two new libraries TfidfVectorizer and TruncatedSVD.
 
@@ -82,7 +87,7 @@ lsa.fit(X)
 row1 = lsa.components_[3]
 ```
 
-### Visualizing the concepts**
+### Visualizing the concepts
 
 ```python
 terms = vectorizer.get_feature_names()
@@ -95,7 +100,7 @@ for i,comp in enumerate(lsa.components_):
         print(term)
 ```
 
-### Sentence the concepts**
+### Sentence the concepts
 
 ```python
 for key in concept_words.keys():

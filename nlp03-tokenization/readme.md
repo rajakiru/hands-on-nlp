@@ -1,4 +1,12 @@
-## Tokenization
+# Tokenization
+
+**Table of contents**
+- [Introduction](#introduction) 
+- [Stemmning and Lemmatization](#stemming-and-lemmatization)
+- [POS Tagging](#parts-of-speech-tagging)
+- [Named Entity Recognition](#name-entity-of-recognition)
+
+## Introduction
 
 *Tokenization* is a process in which a sequence is broken down into pieces such as words, sentences, phrases etc. In the previous video you have learned how to tokenize a paragraph into sentences or words. The way these tokenizations work are explained as follows.
 
@@ -140,9 +148,9 @@ for i in range(len(sentences)):
 
 [stopwords.py](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/93dd0428-a1d9-41fc-adec-c2c0087b3650/stopwords.py)
 
-### Parts of speech tagging
+## Parts of speech tagging
 
-- **POS Tag Meanings**
+**POS Tag Meanings**
     
     Here are the meanings of the Parts-Of-Speech tags used in NLTK
     
@@ -197,7 +205,7 @@ tagged_paragraph = ' '.join(word_tags)
 
 [postagging.py](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ae751e52-db87-452b-9247-aec3e087d9e0/postagging.py)
 
-### Name entity of recognition
+## Name entity of recognition
 
 Every sentences contains a lot of entities. Here is how to extract the different entities in a sentence.
 

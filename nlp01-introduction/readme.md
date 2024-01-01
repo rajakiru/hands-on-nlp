@@ -1,12 +1,12 @@
 # Introduction
 
-Table of contents
-- [What is NLP?](#what-is-natural-language-processing?) 
+**Table of contents**
+- [What is NLP?](#what-is-natural-language-processing)
 - [Python Review](#python-review)
-- [Regular Expressions](#what-is-a-regular-expression?)
+- [Regular Expressions](#what-is-a-regular-expression)
 - [Tokenization](#what-is-tokenization)
 
-## What is Natural Language Processing? 
+## What is Natural Language Processing?
 
 - Field of study focused on making sense of language
     - using statistics and computers
@@ -23,25 +23,25 @@ Table of contents
 - Conditional Statements
 - Loops
 - **Lists**
-    
+
     List is a collection which is ordered and changeable. Allows duplicate members.
-    
+
     ```python
     mylist = ["apple", "banana", "cherry"]
     ```
-    
+
 - **Tuples**
-    
+
     Tuples is a collection which is ordered and unchangeable. Allows duplicate members.
-    
+
     ```python
     mytuple = ("apple", "banana", "cherry")
     ```
-    
+
 - **Dictionaries**
-    
+
     Dictionaries is a collection which is ordered and changeable. No duplicate members.
-    
+
     ```python
     thisdict = {
       "brand": "Ford",
@@ -49,20 +49,20 @@ Table of contents
       "year": 1964
     }
     ```
-    
+
 - **List Comprehension**
-    
+
     List comprehension offers a shorter syntax when you want to create a new list based on the values of an existing list.
-    
+
     ```python
     fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
     newlist = []
-    
+
     for x in fruits:
       if "a" in x:
         newlist.append(x)
     ```
-    
+
 - Console and File I/O
 - Functions
 - Classes and Objects
